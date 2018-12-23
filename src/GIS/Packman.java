@@ -9,7 +9,14 @@ public class Packman {
 	private int speed;
 	private Path path = new Path();
 	private double time = 0;
+	private boolean b;
 	
+	public boolean isB() {
+		return b;
+	}
+	public void setB(boolean b) {
+		this.b = b;
+	}
 	public Packman(Point3D gps,int speed,int radius) {
 		this.gps = gps;
 		this.radius = radius;

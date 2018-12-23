@@ -21,18 +21,7 @@ public class ShortestPathAlgo {
 			g.getPath().addTime(0);
 		}
 	}
-	//	public Path shortpath () {
-	//		Path path = new Path();
-	//		path.addF(a.gps);
-	//		ArrayList<Fruit> ff = new ArrayList<Fruit> (game.getAllfruit());
-	//		while (!ff.isEmpty()) {
-	//			Fruit f = findclosedfruit(a,ff);
-	//			path.addF(f.gps);
-	//			a.setGps(f.gps);
-	//			ff.remove(f);
-	//		}
-	//		return path;
-	//	}
+
 	public Solution shortpath () {
 		Solution answer = new Solution();
 		double time =Double.MAX_VALUE;

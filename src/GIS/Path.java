@@ -43,8 +43,6 @@ public class Path {
 	}
 	public Point3D nextFruit(Packman pac) {
 		boolean [] b = new boolean[path.size()] ;
-
-
 		for(int i = 0 ; i < path.size() ; i++) {
 			if(pac.getGps().equals( path.get(i))) {
 				bol.add(true);
@@ -53,7 +51,7 @@ public class Path {
 		for(int i = 0 ; i<bol.size(); i++) {
 			b[i]= bol.get(i);
 		}
-
+		
 		Point3D pointToReturn = null;
 		for(int i = 0; i <b.length; i++) {
 			if(b[i] != false) {

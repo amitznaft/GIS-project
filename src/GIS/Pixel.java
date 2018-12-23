@@ -24,11 +24,9 @@ public class Pixel {
 	public void setWightPixel(int wight) {
 		this.wightPixel = wight;
 	}
-//	public boolean equael(Pixel a) {
-//	return  this.getHightPixel() == a.getHightPixel() && this.getWightPixel() == a.getWightPixel();
-//	}
+
 	
-	public boolean equls(Pixel p) {
+	public boolean equael(Pixel p) {
 		boolean hight = false;
 		boolean wight = false;
 		if(this.getHightPixel() == p.getHightPixel()|| this.getHightPixel() == p.getHightPixel()+1||this.getHightPixel() == p.getHightPixel()-1) {

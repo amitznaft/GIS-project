@@ -3,7 +3,6 @@ package GUI;
 
 import java.awt.Color;
 import java.awt.Graphics;
-import java.awt.GraphicsConfiguration;
 import java.awt.Menu;
 import java.awt.MenuBar;
 import java.awt.MenuItem;
@@ -21,10 +20,8 @@ import java.util.Scanner;
 import javax.imageio.ImageIO;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
-import javax.swing.JWindow;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
-import com.sun.javafx.collections.MappingChange.Map;
 
 import GIS.Fruit;
 import GIS.Game;
@@ -246,197 +243,6 @@ public class MainWindow extends JFrame implements MouseListener, Runnable
 	public void mouseReleased(MouseEvent arg0) {
 		// TODO Auto-generated method stub	
 	}
-	//			public void run() {
-	//				Mapp map = new Mapp(this.getHeight() , this.getWidth());
-	//				ShortestPathAlgo s;
-	//				if (b) {
-	//					s = new ShortestPathAlgo(game1);
-	//					Solution ad = s.shortpath();
-	//					Iterator <Path> itp = ad.itPath();
-	//					while(itp.hasNext()) {
-	//						Path path = itp.next();
-	//						Iterator<Point3D> itpoint = path.iteratorpack();
-	//						Point3D p = new Point3D (itpoint.next());
-	//						Iterator <Packman> it = game1.iteratorpack();
-	//						while(it.hasNext()) {
-	//							Packman a = it.next();
-	//							if (a.getGps().equals(p)) {
-	//								a.setPath(path);
-	//								break;
-	//							}
-	//						}
-	//					}
-	//					Iterator <Packman> it = game1.iteratorpack();
-	//					while (it.hasNext()) {
-	//						Packman a = it.next();
-	//						Iterator<Point3D> itpoint = a.getPath().iteratorpack();
-	//						Pixel pix2 = map.PointToPixel(a.getGps());
-	//						Pixel pix0 = new Pixel(pix2.getWightPixel(), pix2.getHightPixel());
-	//						itpoint.next();
-	//						while(itpoint.hasNext()) {
-	//							Point3D p = itpoint.next();
-	//							Pixel pix1 = map.PointToPixel(p);
-	//							while (!pix0.equael(pix1)) {
-	//								if (pix1.getWightPixel() > pix0.getWightPixel()) {
-	//									pix0.setWightPixel(pix0.getWightPixel() +1);
-	//								}
-	//								else if (pix1.getWightPixel() < pix0.getWightPixel()) {
-	//									pix0.setWightPixel(pix0.getWightPixel() -1);
-	//								}
-	//								if (pix1.getHightPixel() > pix0.getHightPixel()) {
-	//									pix0.setHightPixel(pix0.getHightPixel() +1);
-	//								}
-	//								else if (pix1.getHightPixel() < pix0.getHightPixel()) {
-	//									pix0.setHightPixel(pix0.getHightPixel() -1);
-	//								}
-	//								Point3D ppp = map.PixelToPoint(pix0);
-	//								a.setGps(ppp);
-	//								try {
-	//									Thread.sleep(30);
-	//								} catch (InterruptedException e) {
-	//									e.printStackTrace();
-	//								}
-	//								repaint();
-	//							}
-	//							Iterator <Fruit> itf = game1.iteratorfruit();
-	//							if (pix0.equael(pix1))
-	//								while(itf.hasNext()) {
-	//									Fruit f = itf.next();
-	//									//							Pixel F = map.PointToPixel(f.getGps());
-	//									//							Pixel P = map.PointToPixel(a.getGps());
-	//									if (f.getGps().equals(p)){
-	//										game1.getAllfruit().remove(f);
-	//										break;
-	//									}
-	//								}
-	//						}
-	//					}
-	//				}
-	//				else {
-	//					s = new ShortestPathAlgo(game);
-	//					Solution ad = s.shortpath();
-	//					Iterator <Path> itp = ad.itPath();
-	//					while(itp.hasNext()) {
-	//						Path path = itp.next();
-	//						Iterator<Point3D> itpoint = path.iteratorpack();
-	//						Point3D p = new Point3D (itpoint.next());
-	//						Iterator <Packman> it = game.iteratorpack();
-	//						while(it.hasNext()) {
-	//							Packman a = it.next();
-	//							if (a.getGps().equals(p)) {
-	//								a.setPath(path);
-	//								break;
-	//							}
-	//						}
-	//					}
-	//					Iterator <Packman> it = game.iteratorpack();
-	//					while (it.hasNext()) {
-	//						Packman a = it.next();
-	//						Iterator<Point3D> itpoint = a.getPath().iteratorpack();
-	//						Pixel pix2 = map.PointToPixel(a.getGps());
-	//						Pixel pix0 = new Pixel(pix2.getWightPixel(), pix2.getHightPixel());
-	//						itpoint.next();
-	//						while(itpoint.hasNext()) {
-	//							Point3D p = itpoint.next();
-	//							Pixel pix1 = map.PointToPixel(p);
-	//							while (!pix0.equael(pix1)) {
-	//								if (pix1.getWightPixel() > pix0.getWightPixel()) {
-	//									pix0.setWightPixel(pix0.getWightPixel() +1);
-	//								}
-	//								else if (pix1.getWightPixel() < pix0.getWightPixel()) {
-	//									pix0.setWightPixel(pix0.getWightPixel() -1);
-	//								}
-	//								if (pix1.getHightPixel() > pix0.getHightPixel()) {
-	//									pix0.setHightPixel(pix0.getHightPixel() +1);
-	//								}
-	//								else if (pix1.getHightPixel() < pix0.getHightPixel()) {
-	//									pix0.setHightPixel(pix0.getHightPixel() -1);
-	//								}
-	//								Point3D ppp = map.PixelToPoint(pix0);
-	//								a.setGps(ppp);
-	//								try {
-	//									Thread.sleep(30);
-	//								} catch (InterruptedException e) {
-	//									e.printStackTrace();
-	//								}
-	//								repaint();
-	//							}
-	//							Iterator <Fruit> itf = game.iteratorfruit();
-	//							if (pix0.equael(pix1))
-	//								while(itf.hasNext()) {
-	//									Fruit f = itf.next();
-	//									//							Pixel F = map.PointToPixel(f.getGps());
-	//									//							Pixel P = map.PointToPixel(a.getGps());
-	//									if (f.getGps().equals(p)){
-	//										game.getAllfruit().remove(f);
-	//										break;
-	//									}
-	//								}
-	//						}
-	//					}
-	//				}
-	//			}
-
-	//	public void run() {
-	//		Mapp map = new Mapp(this.getHeight() , this.getWidth());
-	//		ShortestPathAlgo s;
-	//		if (b) {
-	//			s = new ShortestPathAlgo(game1);
-	//			Solution ad = s.shortpath();
-	//			Iterator <Path> itp = ad.itPath();
-	//			while(itp.hasNext()) {
-	//				Path path = itp.next();
-	//				Iterator<Point3D> itpoint = path.iteratorpack();
-	//				Point3D p = new Point3D (itpoint.next());
-	//				Iterator <Packman> it = game1.iteratorpack();
-	//				while(it.hasNext()) {
-	//					Packman a = it.next();
-	//					if (a.getGps().equals(p)) {
-	//						a.setPath(path);
-	//						break;
-	//					}
-	//				}
-	//			}
-	//			while (!ad.getAllpaths().isEmpty()) {
-	//				for (int i=0; i<game1.getAllPackman().size(); i++) {
-	//					//if (game1.getAllPackman().get(i).getPath().getAllPoints().size() > i ) {
-	//					Point3D p = game1.getAllPackman().get(i).getPath().getAllPoints().get(0);
-	//					//						Pixel pix2 = map.PointToPixel(game1.getAllPackman().get(i).getGps());
-	//					Pixel pix0 = map.PointToPixel(game1.getAllPackman().get(i).getGps());
-	//					Pixel pix1 = map.PointToPixel(p);
-	//					if (pix1.getWightPixel() > pix0.getWightPixel()) {
-	//						pix0.setWightPixel(pix0.getWightPixel() +1);
-	//					}
-	//					else if (pix1.getWightPixel() < pix0.getWightPixel()) {
-	//						pix0.setWightPixel(pix0.getWightPixel() -1);
-	//					}
-	//					if (pix1.getHightPixel() > pix0.getHightPixel()) {
-	//						pix0.setHightPixel(pix0.getHightPixel() +1);
-	//					}
-	//					else if (pix1.getHightPixel() < pix0.getHightPixel()) {
-	//						pix0.setHightPixel(pix0.getHightPixel() -1);
-	//					}
-	//					Point3D ppp = map.PixelToPoint(pix0);
-	//					game1.getAllPackman().get(i).setGps(ppp);
-	//					System.out.println("pix0: " + pix0 + " pix1: " + pix1);
-	//					if (pix0.equael(pix1)) {
-	//						game1.getAllPackman().get(i).getPath().getAllPoints().remove(p);
-	//					}
-	//					if (game1.getAllPackman().get(i).getPath().isEmpty()) {
-	//						ad.getAllpaths().remove(game1.getAllPackman().get(i).getPath());
-	//					}
-	//					repaint();
-	//					try {
-	//						Thread.sleep(30);
-	//					} catch (InterruptedException e) {
-	//						e.printStackTrace();
-	//					}
-	//					//}
-	//				}
-	//			}
-	//		}
-	//	}
-
 	public void run () {
 		if (b) {
 			Mapp map = new Mapp(this.getHeight() , this.getWidth());
@@ -468,13 +274,28 @@ public class MainWindow extends JFrame implements MouseListener, Runnable
 				for (int p =0; p < game1.getAllPackman().size(); p++){
 					Packman a = game1.getAllPackman().get(p);
 					count ++;
-					if (a.getGps().equals(b[p]) && count < game1.getAllPackman().size()) {
-						Iterator <Fruit> itf = game1.iteratorfruit();
-						while(itf.hasNext()) {
-							Fruit f = itf.next();
-							if (f.getGps().equals(a.getGps())){
-								game1.getAllfruit().remove(f);
-								break;
+					if (a.getPath().getAllPoints().size() == 1 ) { continue; }
+					else if (a.getPath().getAllPoints().get(0).equals(a.getPath().getAllPoints().get(1) )&& a.isB()==false) {	
+						if ((a.getGps().equals(b[p]) && count < game1.getAllPackman().size())) {
+							Iterator <Fruit> itf = game1.iteratorfruit();
+							while(itf.hasNext()) {
+								Fruit f = itf.next();
+								if (f.getGps().equals(a.getGps())){
+									game1.getAllfruit().remove(f);
+									a.setB(true);
+									break;
+								}
+							}
+						}
+						else if(a.getGps().equals(a.getPath().getAllPoints().get(1)) && a.isB()==false) {
+							Iterator <Fruit> itf = game1.iteratorfruit();
+							while(itf.hasNext()) {
+								Fruit f = itf.next();
+								if (f.getGps().equals(a.getGps())){
+									game1.getAllfruit().remove(f);
+									a.setB(true);
+									break;
+								}
 							}
 						}
 					}
@@ -513,14 +334,12 @@ public class MainWindow extends JFrame implements MouseListener, Runnable
 						repaint();
 
 						Iterator <Fruit> itf = game1.iteratorfruit();
-						if (pix0.equls(pix1))
+						if (pix0.equael(pix1))
 							while(itf.hasNext()) {
 								Fruit f = itf.next();
 								Point3D new_a = new Point3D(f.getGps());
-								//Pacmen pacp = new Pacmen(a);
 								if (f.getGps().equals(pac)){
 									game1.getAllPackman().get(p).setGps(new_a);
-									//a = new Pacmen(new_a,pacp.getR(),pacp.getS());
 									game1.getAllfruit().remove(f);
 									break;
 								}
@@ -533,6 +352,101 @@ public class MainWindow extends JFrame implements MouseListener, Runnable
 				}	
 			}
 		}
+
+		else {
+			Mapp map = new Mapp(this.getHeight() , this.getWidth());
+			ShortestPathAlgo s;
+			s = new ShortestPathAlgo(game);
+			Solution ad = s.shortpath();
+			Iterator <Path> itp = ad.itPath();
+			while(itp.hasNext()) {
+				Path path = itp.next();
+				Iterator<Point3D> itpoint = path.iteratorpack();
+				Point3D p = new Point3D (itpoint.next());
+				Iterator <Packman> it = game.iteratorpack();
+				while(it.hasNext()) {
+					Packman a = it.next();
+					if (a.getGps().equals(p)) {
+						a.setPath(path);
+						break;
+					}
+				}
+			}
+			Point3D [] b  =  new Point3D[game.getAllPackman().size()]; ;
+			for (int p =0; p < game.getAllPackman().size(); p++){
+				Packman a = game.getAllPackman().get(p);
+
+				b[p]=a.getPath().LestIndex();
+			}
+			int count = 0;
+			while(!game.getAllfruit().isEmpty()) {  
+				for (int p =0; p < game.getAllPackman().size(); p++){
+					Packman a = game.getAllPackman().get(p);
+					count ++;
+					if (a.getGps().equals(b[p]) && count < game.getAllPackman().size()) {
+						Iterator <Fruit> itf = game.iteratorfruit();
+						while(itf.hasNext()) {
+							Fruit f = itf.next();
+							if (f.getGps().equals(a.getGps())){
+								game.getAllfruit().remove(f);
+								break;
+							}
+						}
+					}
+					else if(a.getGps().equals(b[p])) {
+
+						continue;
+					}
+					else {
+						Point3D pac = a.getPath().nextFruit(a);
+						Pixel pix2 = map.PointToPixel(a.getGps());
+						Pixel pix0 = new Pixel(pix2.getWightPixel(), pix2.getHightPixel());
+						Pixel pix1 = map.PointToPixel(pac);
+
+						if (pix1.getWightPixel() > pix0.getWightPixel()+1 && pix1.getWightPixel() > pix0.getWightPixel()) {
+							pix0.setWightPixel(pix0.getWightPixel() +2);
+						}
+						else if (pix1.getWightPixel() < pix0.getWightPixel()+1 &&pix1.getWightPixel() < pix0.getWightPixel()) {
+							pix0.setWightPixel(pix0.getWightPixel() -2);
+						}
+
+						if (pix1.getHightPixel() > pix0.getHightPixel()+1 && pix1.getHightPixel() > pix0.getHightPixel()) {
+							pix0.setHightPixel(pix0.getHightPixel() +2);
+						}
+						else if (pix1.getHightPixel() < pix0.getHightPixel()+1 && pix1.getHightPixel() < pix0.getHightPixel()) {
+							pix0.setHightPixel(pix0.getHightPixel() -2);
+						}
+
+						Point3D ppp = map.PixelToPoint(pix0);
+						a.setGps(ppp);
+						try {
+							Thread.sleep(20);
+						} catch (InterruptedException e) {
+							e.printStackTrace();
+						}
+
+						repaint();
+
+						Iterator <Fruit> itf = game.iteratorfruit();
+						if (pix0.equael(pix1))
+							while(itf.hasNext()) {
+								Fruit f = itf.next();
+								Point3D new_a = new Point3D(f.getGps());
+								if (f.getGps().equals(pac)){
+									game.getAllPackman().get(p).setGps(new_a);
+									game.getAllfruit().remove(f);
+									break;
+								}
+							}
+						if(p == game.getAllPackman().size()-1) {
+							p=-1;
+						}
+
+					}	
+				}	
+			}
+		}
 	}
 }
+
 

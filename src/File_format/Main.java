@@ -10,7 +10,7 @@ import GIS.Solution;
 public class Main {
 
 	public static void main(String[] args) {
-		Game game = new Game("game_1543693911932_a.csv");
+		Game game = new Game("game_1543685769754.csv");
 		ShortestPathAlgo s = new ShortestPathAlgo(game);
 		Solution sol = s.shortpath();
 		ArrayList<Path> p = sol.getAllpaths();

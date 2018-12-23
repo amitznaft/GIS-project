@@ -141,9 +141,9 @@ public class Game {
 	}
 	
 	public ArrayList<Fruit> getAllfruit (){
-		return fruit;
+		return this.fruit;
 	}
 	public ArrayList<Packman> getAllPackman (){
-		return pack;
+		return this.pack;
 	}
 }
