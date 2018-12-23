@@ -1,4 +1,4 @@
-# about the project
+# About the project
 This task gradually opens up a complex system that enables the collection of geographic information, the production of insights from this information, and the presentation of information in graphical tools. 
 It generates information about traffic loads in real time by accumulating waze information. We will look at an application such as many practices, and improve it.
 the project consist Ex2 Ex3 Ex4 
@@ -19,3 +19,21 @@ General algorithms such as: selection within rectangle, selection of distance, m
 
 File_formats:
 A: a package that allows saving and restoring geographic information, text formatting, and _formats
+
+# Ex3
+
+In this phase, the geographic system continues to evolve, with some interesting twists.
+
+A new Packman game was added to the mix, play the good old packman game over a real picture of a map.
+
+the main target of exercise was to build and algorithm that will finish the game as soon as possible.
+
+![ariel](https://user-images.githubusercontent.com/44799500/50387675-2fd47c00-070b-11e9-8fdb-d3af3bd4fd41.png)
+
+The game ends when all Fruits have been eaten by the packmen.
+
+Finding the shortest path possible for a single player and a group of packmen has been build Achieving impressive results.
+
+A Game can be built By several ways, including from a proper csv file, and manually from the Jframe (MyFrame) window.
+
+Also , view game's rewind on google earth , with "Game2Kml". 
